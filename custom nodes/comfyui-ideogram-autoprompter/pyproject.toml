@@ -1,0 +1,16 @@
+[project]
+name = "comfyui-ideogram-autoprompter"
+description = "AI autoprompter for Ideogram 4's structured JSON caption format — local Qwen3-VL or Gemini build the caption, then edit it on a visual bbox canvas."
+version = "0.1.0"
+license = {text = "GPL-3.0"}
+dependencies = ["pillow>=10.3.0", "requests", "transformers>=4.57.0", "accelerate", "huggingface_hub"]
+
+[project.urls]
+Repository = "https://github.com/collbroGTR/comfyui-ideogram-autoprompter"
+
+[tool.comfy]
+PublisherId = "collbroGTR"
+DisplayName = "ComfyUI-Ideogram-Autoprompter"
+
+[tool.setuptools]
+packages = ["nodes"]
